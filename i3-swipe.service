@@ -1,0 +1,10 @@
+[Unit]
+Description=A swipe daemon for i3
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/i3-swipe.py
+Restart=always
+
+[Install]
+WantedBy=default.target
